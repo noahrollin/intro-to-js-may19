@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .head {
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: relative;
+        }
+        .leftEye, .rightEye {
+            background-color: black;
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            top: calc(33% - 20px);
+        }
+        .leftEye {
+            top: calc(33% - 20px);
+            top: calc(33% - 20px);
+        }
+        .rightEye {
+            top: calc(33% - 20px);
+            top: calc(33% - 20px);
+        }
+        .mouth {
+            background-color: black;
+            height: 20px;
+            width: 80px;
+            position: absolute;
+            top: 66%;
+            /* left: calc(50% - ); */
+
+        }
+    </style>
+</head>
+<body>
+
+<!-- <script>
+    function name() {
+        console.log('name function');
+    }
+    class Animal {
+        color;
+        hasHair;
+        canFly;
+        canWalk;
+        legs;
+        
+        constructor(hasHair, legs, color) {
+            console.log('an animal was created')
+            this.hasHair = hasHair;
+            this.legs = legs;
+            this.color = color;
+        }
+        breath() {
+            console.log('this animal took a breath')
+        }
+
+        getHasHair() {
+            console.log(this.hasHair)
+        }
+
+        describe() {
+            console.log('
+                this animal is ${this.color}.this animal has ${this.legs} legs
+            ')
+        }
+    } 
+
+</script> -->
+
+<script>
+
+    class Face {
+        head;
+        leftEye;
+        rightEye;
+        mouth;
+        constructor() {
+            this.head = document.createElement('div');
+            this.leftEye = document.createElement('div');
+            this.rightEye = document.createElement('div');
+            this.mouth = document.createElement('div');
+
+
+            this.head.classlist.add('head');
+            this.leftEye.classlist.add('leftEye');
+            this.rightEye.classlist.add('rightEye');
+            this.mouth.classlist.add('mouth');
+            
+            document.body.appendChild(this.head);
+            this.head.appendChild(this.leftEye);
+            this.head.appendChild(this.rightEye);
+            this.head.appendChild(this.mouth);
+        }
+    }
+
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
